@@ -7,7 +7,9 @@ export const FeedbackOptionsUl = styled.ul`
 `;
 
 export const FeedbackOptionsBtn = styled.button`
-font-size: 22px;
+  font-size: 22px;
+  background-color: sandybrown;
+  border-radius: 5px;
   box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 `;
