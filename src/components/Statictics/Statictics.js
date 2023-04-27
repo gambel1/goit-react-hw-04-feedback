@@ -1,4 +1,4 @@
-import { StaticticsListUl } from './Statictics.styled';
+import { StaticticsListUl, StaticticsListSpan } from './Statictics.styled';
 import PropTypes from 'prop-types';
 
 export default function Statictics(props) {
@@ -6,24 +6,24 @@ export default function Statictics(props) {
   return (
     <StaticticsListUl>
       <li>
-        <span>Good</span>
-        <span>{good}</span>
+        <StaticticsListSpan>Good</StaticticsListSpan>
+        <StaticticsListSpan>{good}</StaticticsListSpan>
       </li>
       <li>
-        <span>Neutral</span>
-        <span>{neutral}</span>
+        <StaticticsListSpan>Neutral</StaticticsListSpan>
+        <StaticticsListSpan>{neutral}</StaticticsListSpan>
       </li>
       <li>
-        <span>Bad</span>
-        <span>{bad}</span>
+        <StaticticsListSpan>Bad</StaticticsListSpan>
+        <StaticticsListSpan>{bad}</StaticticsListSpan>
       </li>
       <li>
-        <span>Total</span>
-        <span>{total}</span>
+        <StaticticsListSpan>Total</StaticticsListSpan>
+        <StaticticsListSpan>{total}</StaticticsListSpan>
       </li>
       <li>
-        <span>Positive Feedback</span>
-        <span>{positiveFeedback} %</span>
+        <StaticticsListSpan>Positive Feedback</StaticticsListSpan>
+        <StaticticsListSpan>{positiveFeedback} %</StaticticsListSpan>
       </li>
     </StaticticsListUl>
   );

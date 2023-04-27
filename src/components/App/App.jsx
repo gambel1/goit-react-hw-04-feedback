@@ -1,7 +1,8 @@
-import FeedbackOptions from './FeedbackOptions/FeedbackOptions';
-import Section from './Section/Section';
-import Notification from './Notification/Notification';
-import Statictics from './Statictics/Statictics';
+import FeedbackOptions from '../FeedbackOptions/FeedbackOptions';
+import Section from '../Section/Section';
+import Notification from '../Notification/Notification';
+import Statictics from '../Statictics/Statictics';
+import { AppContainer } from './App.styled';
 
 import { useState } from 'react';
 
@@ -21,7 +22,7 @@ export default function App() {
       case 'bad':
         setBad(bad + 1);
         break;
-      
+
       default:
         return;
     }
@@ -31,7 +32,7 @@ export default function App() {
   const percentage = Math.round((good / totalFeedback) * 100);
 
   return (
-    <div>
+    <AppContainer>
       <Section title="Please leave feedback">
         <FeedbackOptions
           options={{ good, neutral, bad }}
@@ -52,7 +53,6 @@ export default function App() {
           />
         )}
       </Section>
-    </div>
+    </AppContainer>
   );
 }
-

@@ -1,10 +1,11 @@
+import {SectionContainer} from './Section.styled'
 import PropTypes from 'prop-types';
 
 export default function Section(props) {
   const { title, children } = props;
   return (
     <section>
-      {title && <h2>{title}</h2>}
+      {title && <SectionContainer>{title}</SectionContainer>}
       {children}
     </section>
   );
